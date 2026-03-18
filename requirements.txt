@@ -1,2 +1,3 @@
 tiktoken
 ipykernel
+torch
