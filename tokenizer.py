@@ -41,9 +41,10 @@ class TiktokenTokenizer():
 
 
 class MinbpeTokenizer():
-    def __init__(self, train_text, vocab_size=300):
+    def __init__(self, train_text, vocab_size=300, max_chars=None):
         self.tokenizer = RegexTokenizer()
-        self.tokenizer.train(train_text, vocab_size=vocab_size)
+        bpe_train_text = train_text[:max_chars] if max_chars is not None else train_text
+        self.tokenizer.train(bpe_train_text, vocab_size=vocab_size)
 
         # Build compact remapping from the training text, matching the
         # smaller contiguous token ids exposed by the other tokenizers.
