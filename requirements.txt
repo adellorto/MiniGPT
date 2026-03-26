@@ -2,3 +2,4 @@ tiktoken
 ipykernel
 torch
 tqdm
+huggingface_hub

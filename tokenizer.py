@@ -9,6 +9,7 @@ class CharachterLevelTokenizer():
         self.vocab = sorted(list(set(train_text)))
         self.stoi = {ch: i for i, ch in enumerate(self.vocab)}  # char -> int
         self.itos = {i: ch for i, ch in enumerate(self.vocab)}  # int -> char
+        self.train_encoded = [self.stoi[c] for c in train_text]
 
     def encode(self, text):
         # Encode (string → list of ints)
@@ -30,6 +31,7 @@ class TiktokenTokenizer():
         self.raw_to_compact = {raw: i for i, raw in enumerate(unique_ids)}
         self.compact_to_raw = {i: raw for raw, i in self.raw_to_compact.items()}
         self.vocab = unique_ids  # len(vocab) gives the compact vocab size
+        self.train_encoded = [self.raw_to_compact[t] for t in raw_ids]
 
     def encode(self, text):
         raw = self.encoding.encode(text)
@@ -41,7 +43,7 @@ class TiktokenTokenizer():
 
 
 class MinbpeTokenizer():
-    def __init__(self, train_text, vocab_size=300, max_chars=None):
+    def __init__(self, train_text, vocab_size=1024, max_chars=None):
         self.tokenizer = RegexTokenizer()
         bpe_train_text = train_text[:max_chars] if max_chars is not None else train_text
         self.tokenizer.train(bpe_train_text, vocab_size=vocab_size)
@@ -53,6 +55,7 @@ class MinbpeTokenizer():
         self.raw_to_compact = {raw: i for i, raw in enumerate(unique_ids)}
         self.compact_to_raw = {i: raw for raw, i in self.raw_to_compact.items()}
         self.vocab = unique_ids
+        self.train_encoded = [self.raw_to_compact[t] for t in raw_ids]
 
     def encode(self, text):
         raw = self.tokenizer.encode(text)
