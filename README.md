@@ -107,15 +107,15 @@ Tiktoken was skipped on Text8 due to GPU memory constraints.
 
 **Tiny Shakespeare**
 
-| Tokenizer | |V| | Val Loss | Val PPL | Norm Loss | Time (s) |
+| Tokenizer | \|V\| | Val Loss | Val PPL | Norm Loss | Time (s) |
 |---|---|---|---|---|---|
 | CharacterLevel | 65 | 2.486 | 12.01 | 0.596 | 19.1 |
-| Tiktoken (cl100k) | 12,111 | 6.289 | 538.36 | 0.669 | 278.4 |
+| Tiktoken (cl100k) | 12111 | 6.289 | 538.36 | 0.669 | 278.4 |
 | MinBPE | 807 | 4.231 | 68.80 | 0.632 | 19.6 |
 
 **Text8**
 
-| Tokenizer | |V| | Val Loss | Val PPL | Norm Loss | Time (s) |
+| Tokenizer | \|V\| | Val Loss | Val PPL | Norm Loss | Time (s) |
 |---|---|---|---|---|---|
 | CharacterLevel | 27 | 2.383 | 10.84 | 0.723 | 18.9 |
 | MinBPE | 794 | 4.167 | 64.51 | 0.624 | 20.6 |
@@ -124,15 +124,15 @@ Tiktoken was skipped on Text8 due to GPU memory constraints.
 
 **Tiny Shakespeare**
 
-| Tokenizer | |V| | Val Loss | Val PPL | Norm Loss | Time (s) |
+| Tokenizer | \|V\| | Val Loss | Val PPL | Norm Loss | Time (s) |
 |---|---|---|---|---|---|
 | CharacterLevel | 65 | 1.565 | 4.78 | 0.375 | 682.4 |
-| Tiktoken (cl100k) | 12,111 | 12.611 | 299,731.8 | 1.341 | 1,215.7 |
+| Tiktoken (cl100k) | 12111 | 12.611 | 299731.8 | 1.341 | 1215.7 |
 | MinBPE | 807 | 3.524 | 33.92 | 0.526 | 714.4 |
 
 **Text8**
 
-| Tokenizer | |V| | Val Loss | Val PPL | Norm Loss | Time (s) |
+| Tokenizer | \|V\| | Val Loss | Val PPL | Norm Loss | Time (s) |
 |---|---|---|---|---|---|
 | CharacterLevel | 27 | 1.397 | 4.04 | 0.424 | 680.8 |
 | MinBPE | 794 | 3.207 | 24.70 | 0.480 | 713.4 |
