@@ -1,0 +1,8 @@
+{
+    "batch_size": 64,
+    "block_size": 128,
+    "max_iters": 3000,
+    "eval_interval": 300,
+    "learning_rate": 0.01,
+    "eval_iters": 200
+}

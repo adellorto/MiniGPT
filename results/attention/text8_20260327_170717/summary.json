@@ -1,0 +1,28 @@
+[
+    {
+        "tokenizer": "CharacterLevel",
+        "vocab_size": 27,
+        "train_loss": 1.3993422985076904,
+        "val_loss": 1.3967117071151733,
+        "train_ppl": 4.052533732664078,
+        "val_ppl": 4.0418871818110835,
+        "train_norm_loss": 0.42457875052662036,
+        "val_norm_loss": 0.42378059470172175,
+        "train_norm_ppl": 1.5289462161993201,
+        "val_norm_ppl": 1.5277263657510334,
+        "training_time_s": 680.8485472202301
+    },
+    {
+        "tokenizer": "MinBPE",
+        "vocab_size": 794,
+        "train_loss": 3.191084861755371,
+        "val_loss": 3.206831693649292,
+        "train_ppl": 24.314791327124734,
+        "val_ppl": 24.70070272537563,
+        "train_norm_loss": 0.4779159763804038,
+        "val_norm_loss": 0.48027431621325345,
+        "train_norm_ppl": 1.6127099719614195,
+        "val_norm_ppl": 1.6165177784131013,
+        "training_time_s": 713.4426920413971
+    }
+]

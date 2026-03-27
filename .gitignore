@@ -1,2 +1,24 @@
-__pycache__
-data
+# Python
+__pycache__/
+.venv/
+
+# Data (users should download datasets themselves)
+data/
+
+# LaTeX report
+report/
+
+# Trained model weights
+models/
+
+# Colab / Jupyter
+.ipynb_checkpoints/
+
+# Results: ignore all except the runs referenced in the report
+results/bigram/*
+!results/bigram/shakespeare_20260326_224048/
+!results/bigram/text8_20260326_231249/
+
+results/attention/*
+!results/attention/shakespeare_20260327_163904/
+!results/attention/text8_20260327_170717/

@@ -1,0 +1,41 @@
+[
+    {
+        "tokenizer": "CharacterLevel",
+        "vocab_size": 65,
+        "train_loss": 2.455034017562866,
+        "val_loss": 2.4859280586242676,
+        "train_ppl": 11.646829738903556,
+        "val_ppl": 12.01226316782304,
+        "train_norm_loss": 0.588118413274158,
+        "val_norm_loss": 0.5955192697505562,
+        "train_norm_ppl": 1.8005972461319086,
+        "val_norm_ppl": 1.8139726415628168,
+        "training_time_s": 19.051769495010376
+    },
+    {
+        "tokenizer": "Tiktoken (cl100k)",
+        "vocab_size": 12111,
+        "train_loss": 3.8337697982788086,
+        "val_loss": 6.288524627685547,
+        "train_ppl": 46.23651242934366,
+        "val_ppl": 538.3584636950445,
+        "train_norm_loss": 0.40776675693840636,
+        "val_norm_loss": 0.6688589634437282,
+        "train_norm_ppl": 1.5034564494859175,
+        "val_norm_ppl": 1.9520087361034681,
+        "training_time_s": 278.39540362358093
+    },
+    {
+        "tokenizer": "MinBPE",
+        "vocab_size": 807,
+        "train_loss": 3.736081600189209,
+        "val_loss": 4.231266498565674,
+        "train_ppl": 41.933356169854584,
+        "val_ppl": 68.8043175849653,
+        "train_norm_loss": 0.5581803279438434,
+        "val_norm_loss": 0.6321622422988767,
+        "train_norm_ppl": 1.7474897471295592,
+        "val_norm_ppl": 1.8816748206334881,
+        "training_time_s": 19.606062173843384
+    }
+]

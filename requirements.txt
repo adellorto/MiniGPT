@@ -3,3 +3,5 @@ ipykernel
 torch
 tqdm
 huggingface_hub
+regex
+matplotlib
