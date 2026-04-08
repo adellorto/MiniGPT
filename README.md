@@ -16,13 +16,14 @@ We implement three models of increasing complexity -- a Neural Bigram Model, a G
 │   ├── regex.py                     # Regex-based BPE (GPT-2/GPT-4 patterns)
 │   └── gpt4.py                      # GPT-4 tokenizer wrapper
 ├── bigram_model_colab.ipynb         # Bigram model experiments (Google Colab)
-├── attention_model_colab.ipynb      # GPT model experiments (Google Colab)
 ├── attention_model_mc_dropout.ipynb # MC Dropout GPT experiments (Google Colab)
 ├── results/                         # Saved experiment outputs (plots, metrics)
 │   ├── bigram/
 │   └── attention/
 └── requirements.txt
 ```
+
+> **Note:** The notebooks are designed to run on **Google Colab** and are not included in this repository as standalone runnable files. Upload them to Colab (or your Google Drive) before running — see [Running the Experiments](#running-the-experiments) below.
 
 ## Environment Setup
 
@@ -73,7 +74,6 @@ Alternatively, the notebooks can be run locally with a CUDA GPU by adjusting the
 | Notebook | Description |
 |---|---|
 | `bigram_model_colab.ipynb` | Neural Bigram Model -- single embedding table, no attention |
-| `attention_model_colab.ipynb` | GPT Language Model -- multi-head self-attention transformer |
 | `attention_model_mc_dropout.ipynb` | MC Dropout GPT -- keeps dropout active at inference for uncertainty estimation |
 
 ## Models
